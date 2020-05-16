@@ -9,6 +9,7 @@
 #include <Log64.h>
 #include <BlinkingLed.h>
 #include <WifiBlinkLed.h>
+#include <PeriodicRestart.h>
 
 TaskManager task_manager;
 std::unique_ptr<PubSubClient> mqtt_client;
@@ -47,6 +48,9 @@ void setup() {
   mqtt_client.reset(new PubSubClient(*wifi_client));
   setup_mqtt_auto_conn();
   setup_ping();
+
+  task_manager.push_back(new PeriodicRestart(1000*3600*6));
+  task_manager.setup();
 }
 
 void loop() {
