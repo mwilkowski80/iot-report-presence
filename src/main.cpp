@@ -1,4 +1,5 @@
 
+#include "PrivateSettings.h"
 #include <Arduino.h>
 #include <memory>
 #include <TaskManager.h>

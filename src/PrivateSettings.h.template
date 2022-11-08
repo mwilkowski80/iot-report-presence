@@ -1,0 +1,17 @@
+//
+// Created by mw on 03.11.22.
+//
+
+#ifndef _H_PRIVATESETTINGS
+#define _H_PRIVATESETTINGS
+
+#define MQTT_PORT 1536
+#define MQTT_USERNAME "username"
+#define MQTT_PASSWORD "password"
+#define MQTT_RABBITMQ_DEFAULT_USER "user"
+#define MQTT_RABBITMQ_DEFAULT_PASS "pass"
+#define RP_CLIENT_ID "client_id"
+#define RP_WIFI_SSID "ssid"
+#define RP_WIFI_PASSWORD "password"
+
+#endif

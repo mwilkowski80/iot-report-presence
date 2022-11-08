@@ -7,8 +7,8 @@ cd "$bindir"/../
 source .env
 
 source /work/iot/platformio/bin/activate
-rm -rf ./../lib/mqtt/.pio/*
-rm -rf ./../lib/iotcommons/.pio/*
+rm -rf ./../iot-mqtt/.pio/*
+rm -rf ./../iot-iotcommons/.pio/*
 rm -rf .pio/*
 pio init --ide clion --board nodemcuv2
 pio run

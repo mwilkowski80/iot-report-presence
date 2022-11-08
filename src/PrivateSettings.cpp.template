@@ -1,0 +1,8 @@
+//
+// Created by mw on 03.11.22.
+//
+
+#include <string>
+
+const std::string username = "username";
+const std::string password = "password";
